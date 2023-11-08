@@ -1,0 +1,15 @@
+name: learning-stencil
+arguments: {
+  description: "Stencil Learning Service",
+  reportingTeam: "Stencil Learners",
+  greetings: ["Welcome", "Goodbye"]
+}
+# Below is a list of modules to use for this application
+# It should follow the following format:
+# - name: <moduleImportPath>
+#   version: "optional-version-to-pin-to"
+modules:
+  - name: github.com/getoutreach/stencil-base
+  - name: github.com/Saddham/learning-stencil-module
+replacements:
+  github.com/Saddham/learning-stencil-module: /Users/spathan/Projects/learning-stencil-module

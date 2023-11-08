@@ -1,0 +1,48 @@
+version: v1.37.0
+modules:
+    - name: github.com/Saddham/learning-stencil-module
+      url: file:///Users/spathan/Projects/learning-stencil-module
+      version: local
+    - name: github.com/getoutreach/devbase
+      url: https://github.com/getoutreach/devbase
+      version: v2.21.1
+    - name: github.com/getoutreach/stencil-base
+      url: https://github.com/getoutreach/stencil-base
+      version: v0.14.0
+files:
+    - name: .editorconfig
+      template: .editorconfig.tpl
+      module: github.com/getoutreach/stencil-base
+    - name: .github/CODEOWNERS
+      template: .github/CODEOWNERS.tpl
+      module: github.com/getoutreach/stencil-base
+    - name: .github/pull_request_template.md
+      template: .github/pull_request_template.md.tpl
+      module: github.com/getoutreach/stencil-base
+    - name: .gitignore
+      template: .gitignore.tpl
+      module: github.com/getoutreach/stencil-base
+    - name: .releaserc.yaml
+      template: .releaserc.yaml.tpl
+      module: github.com/getoutreach/stencil-base
+    - name: .tool-versions
+      template: .tool-versions.tpl
+      module: github.com/getoutreach/stencil-base
+    - name: greeter/Goodbye.go
+      template: greeter.go.tpl
+      module: github.com/Saddham/learning-stencil-module
+    - name: greeter/Welcome.go
+      template: greeter.go.tpl
+      module: github.com/Saddham/learning-stencil-module
+    - name: main.go
+      template: main.go.tpl
+      module: github.com/Saddham/learning-stencil-module
+    - name: package.json
+      template: package.json.tpl
+      module: github.com/getoutreach/stencil-base
+    - name: scripts/devbase.sh
+      template: scripts/devbase.sh.tpl
+      module: github.com/getoutreach/devbase
+    - name: scripts/shell-wrapper.sh
+      template: scripts/shell-wrapper.sh.tpl
+      module: github.com/getoutreach/devbase

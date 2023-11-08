@@ -1,6 +1,3 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -8,14 +5,68 @@
 *.so
 *.dylib
 
-# Test binary, built with `go test -c`
+# Editor files
+*.swp
+*~
+\#*\#
+.idea/*
+TAGS
+*.sublime-project
+*.sublime-workspace
+.\#*
+.dir-locals.el
+
+# Test binary, build with "go test -c"
 *.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Log files
+*.log
 
-# Go workspace file
-go.work
+# Releases and other binaries
+bin/
+dist/
+
+# Don't. Commit. Vendor. Or other package manager dep directories
+node_modules
+vendor
+
+# Fetched by make
+concourse/jsonnet-libs
+
+# pulumi secrets, obtained from vault
+Pulumi.*.yaml
+
+# terraform
+.terraform
+
+# macOS
+.DS_Store
+
+# Ruby gRPC client
+*.gem
+
+# bootstrap libs
+.bootstrap
+
+# CircleCI cache version
+/cache-version.txt
+
+# DevSpace files
+/.devspace
+/deployments/learning-stencil.yaml
+
+# Documentation output
+/apidocs
+
+# Terraform lock files
+.terraform.lock.hcl
+
+### Start ignores inserted by other modules
+### End ignores inserted by other modules
+
+## <<Stencil::Block(extras)>>
+.history
+## <</Stencil::Block>>
