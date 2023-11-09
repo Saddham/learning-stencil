@@ -2,7 +2,7 @@ name: learning-stencil
 arguments: {
   description: "Stencil Learning Service",
   reportingTeam: "Stencil Learners",
-  greetings: ["Welcome", "Goodbye"]
+  greetings: ["welcome", "goodbye"]
 }
 # Below is a list of modules to use for this application
 # It should follow the following format:
@@ -13,3 +13,4 @@ modules:
   - name: github.com/Saddham/learning-stencil-module
 replacements:
   github.com/Saddham/learning-stencil-module: /Users/spathan/Projects/learning-stencil-module
+  github.com/Saddham/learning-stencil-native-extension: /Users/spathan/Projects/learning-stencil-native-extension
